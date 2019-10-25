@@ -1,0 +1,14 @@
+{
+  "name": "iam",
+  "version": "1.0.0",
+  "description": "iambeig",
+  "main": "script.js",
+  "scripts": {
+    "test": "FSD"
+  },
+  "keywords": [
+    "iam"
+  ],
+  "author": "Moid Hasan Beig",
+  "license": "ISC"
+}
