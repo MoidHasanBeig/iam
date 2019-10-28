@@ -1,0 +1,41 @@
+body.iam {
+  overflow-x: hidden;
+  @font-face {
+    font-family: poorStory;
+    src: url("../font/PoorStory-Regular.ttf");
+  }
+  font-family: poorStory;
+
+  .scenery {
+    opacity: 0.8;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(60, 178, 255, 0.65) 23.96%, rgba(60, 178, 255, 0.169) 100%);
+  }
+
+  .greet {
+    text-shadow: 3px 5px 3px rgba(0, 0, 0, 0.25);
+    color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    .hi {
+      font-size: 52px;
+      line-height: 40px;
+    }
+
+    .moid {
+      font-size: 82px;
+      line-height: 70px;
+    }
+
+    .fsd {
+      font-size: 23px;
+      line-height: 23px;
+    }
+  }
+}

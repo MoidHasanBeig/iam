@@ -1,0 +1,160 @@
+body.iam {
+  .scenery {
+    .top-scene {
+      .cloud1 {
+        animation-name: cloud1-breeze;
+        animation-duration: 500s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      @keyframes cloud1-breeze {
+        0% {
+          transform: translateX(0vw);
+        }
+
+        70% {
+          opacity: 1;
+          transform: translateX(90vw);
+        }
+
+        71% {
+          opacity: 0;
+          transform: translateX(90vw);
+        }
+
+        72% {
+          opacity: 0;
+          transform: translateX(-35vw);
+        }
+
+        73% {
+          opacity: 1;
+          transform: translateX(-35vw);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateX(0vw);
+        }
+      }
+
+      .cloud2 {
+        animation-name: cloud2-breeze;
+        animation-duration: 1000s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      @keyframes cloud2-breeze {
+        0% {
+          transform: translateX(0vw);
+        }
+
+        50% {
+          opacity: 1;
+          transform: translateX(-70vw);
+        }
+
+        51% {
+          opacity: 0;
+          transform: translateX(-70vw);
+        }
+
+        52% {
+          opacity: 0;
+          transform: translateX(70vw);
+        }
+
+        53% {
+          opacity: 1;
+          transform: translateX(70vw);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateX(0vw);
+        }
+      }
+
+      .cloud3 {
+        animation-name: cloud3-breeze;
+        animation-duration: 500s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      @keyframes cloud3-breeze {
+        0% {
+          transform: translateX(0vw);
+        }
+
+        40% {
+          opacity: 1;
+          transform: translateX(40vw);
+        }
+
+        41% {
+          opacity: 0;
+          transform: translateX(40vw);
+        }
+
+        42% {
+          opacity: 0;
+          transform: translateX(-80vw);
+        }
+
+        43% {
+          opacity: 1;
+          transform: translateX(-80vw);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateX(0vw);
+        }
+      }
+    }
+
+    .bottom-scene {
+      .windmill {
+        .windmill-tower {
+          .windmill-fan {
+            animation-name: windmill;
+            animation-duration: 40s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+          }
+          @keyframes windmill {
+            0% {
+              transform: rotate(0deg);
+            }
+
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+
+      .hut {
+        .code-smoke {
+          animation-name: smoke;
+          animation-duration: 10s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+        }
+        @keyframes smoke {
+          0% {
+            transform: translateY(0vh);
+          }
+          50%
+          {
+            transform: translateY(-5vh);
+          }
+          100% {
+            transform: translate(2vw,-10vh);
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+body.iam {
+  .scenery {
+    .top-scene {
+      .cloud1 {
+        background-image: url("../images/cloud1.svg"), none;
+        position: absolute;
+        width: 250px;
+        height: 125px;
+        left: 16vw;
+        top: 16vh;
+        z-index: 2;
+        background-size: 100% 100%;
+      }
+
+      .sun {
+        background-image: url("../images/sun.svg"), none;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 26vw;
+        top: 3vh;
+        z-index: 0;
+        background-size: 100% 100%;
+      }
+
+      .cloud2 {
+        background-image: url("../images/cloud2.svg"), none;
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        left: 51vw;
+        top: 19vh;
+        z-index: 1;
+        background-size: 100% 100%;
+      }
+
+      .cloud3 {
+        background-image: url("../images/cloud3.svg"), none;
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        left: 65vw;
+        top: 16vh;
+        z-index: 2;
+        background-size: 100% 100%;
+      }
+    }
+
+    .bottom-scene {
+      .grass-front {
+        background-image: url("../images/grassfront.svg");
+        position: absolute;
+        width: 100%;
+        height: 13%;
+        top: 90vh;
+        background-size: 100% 100%;
+        z-index: 7;
+        // transform: scaleY(0.7);
+      }
+
+      .grass-back {
+        background-image: url("../images/grassback.svg");
+        position: absolute;
+        width: 100%;
+        height: 18%;
+        top: 85vh;
+        background-size: 100% 100%;
+        z-index: 5;
+        transform: scaleY(0.7);
+      }
+
+      .hut {
+        background-image: url("../images/hut.svg");
+        position: absolute;
+        width: 124.19px;
+        height: 105px;
+        right: 27%;
+        bottom: 2%;
+        background-size: 100% 100%;
+        z-index: 5;
+
+        .chimney {
+          background: #fff;
+          position: absolute;
+          width: 12px;
+          height: 20px;
+          left: 22%;
+          bottom: 78%;
+          z-index: 2;
+        }
+
+        .code-smoke {
+            background-image: url("../images/code.svg");
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            right: 68%;
+            bottom: 80%;
+            background-size: 100% 100%;
+            z-index: 1;
+        }
+      }
+
+      .sheeps {
+        background-image: url("../images/sheeps.svg");
+        position: absolute;
+        width: 95px;
+        height: 55px;
+        left: 41%;
+        bottom: 0;
+        background-size: 100% 100%;
+        z-index: 8;
+      }
+
+      .windmill {
+        .windmill-tower {
+          background-image: url("../images/windmilltower.svg");
+          position: absolute;
+          width: 56.02px;
+          height: 212.21px;
+          right: 22%;
+          bottom: 3%;
+          background-size: 100% 100%;
+          z-index: 4;
+
+          .windmill-fan {
+            background-image: url("../images/windmillfan.svg");
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-size: 100% 100%;
+            z-index: 4;
+            left: -128%;
+            top: -35%;
+          }
+        }
+      }
+    }
+  }
+}
