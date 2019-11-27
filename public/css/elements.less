@@ -1,69 +1,114 @@
 body.iam {
   .scenery {
     .top-scene {
+      .cloud0 {
+        display: none;
+        background-image: url("../images/cloud3.svg"), none;
+        position: fixed;
+        width: 300px;
+        height: 150px;
+        left: -22vw;
+        top: 86px;
+        z-index: 2;
+        background-size: 100% 100%;
+      }
+
       .cloud1 {
         background-image: url("../images/cloud1.svg"), none;
-        position: absolute;
-        width: 250px;
-        height: 125px;
-        left: 16vw;
-        top: 16vh;
+        position: fixed;
+        width: 200px;
+        height: 100px;
+        left: 17vw;
+        top: 96px;
         z-index: 2;
         background-size: 100% 100%;
       }
 
       .sun {
         background-image: url("../images/sun.svg"), none;
-        position: absolute;
-        width: 200px;
-        height: 200px;
-        left: 26vw;
-        top: 3vh;
-        z-index: 0;
+        position: fixed;
+        width: 250px;
+        height: 250px;
+        left: 20vw;
+        top: -10px;
+        z-index: 1;
         background-size: 100% 100%;
       }
 
       .cloud2 {
         background-image: url("../images/cloud2.svg"), none;
-        position: absolute;
+        position: fixed;
         width: 100px;
         height: 50px;
-        left: 51vw;
-        top: 19vh;
-        z-index: 1;
+        left: 55vw;
+        top: 114px;
+        z-index: 2;
         background-size: 100% 100%;
       }
 
       .cloud3 {
         background-image: url("../images/cloud3.svg"), none;
-        position: absolute;
+        position: fixed;
         width: 200px;
         height: 100px;
         left: 65vw;
-        top: 16vh;
+        top: 96px;
         z-index: 2;
         background-size: 100% 100%;
       }
     }
 
     .bottom-scene {
+      // .hills-front {
+      //   background-image: url("../images/hillsfront.svg");
+      //   position: fixed;
+      //   width: 40%;
+      //   height: 300px;
+      //   left: -2%;
+      //   bottom: -50px;
+      //   background-size: 100% 100%;
+      //   z-index: -1;
+      // }
+      //
+      // .hills-middle {
+      //   background-image: url("../images/hillsmid.svg");
+      //   position: fixed;
+      //   width: 100%;
+      //   height: 300px;
+      //   right: -120px;
+      //   bottom: 0;
+      //   background-size: 100% 100%;
+      //   z-index: -2;
+      // }
+      //
+      // .hills-back {
+      //   background-image: url("../images/hillsback.svg");
+      //   position: fixed;
+      //   width: 100%;
+      //   height: 550px;
+      //   bottom: -120px;
+      //   background-size: 100% 100%;
+      //   z-index: -3;
+      // }
+
       .grass-front {
         background-image: url("../images/grassfront.svg");
         position: absolute;
-        width: 100%;
-        height: 13%;
-        top: 90vh;
+        width: 600px;
+        height: 600px;
+        bottom: -300px;
         background-size: 100% 100%;
         z-index: 7;
-        // transform: scaleY(0.7);
+        left: 50%;
+        transform: translateX(-50%);
       }
 
       .grass-back {
         background-image: url("../images/grassback.svg");
-        position: absolute;
+        position: fixed;
         width: 100%;
-        height: 18%;
-        top: 85vh;
+        height: 108px;
+        bottom: 0;
         background-size: 100% 100%;
         z-index: 5;
         transform: scaleY(0.7);
@@ -72,54 +117,35 @@ body.iam {
       .hut {
         background-image: url("../images/hut.svg");
         position: absolute;
-        width: 124.19px;
-        height: 105px;
-        right: 27%;
-        bottom: 2%;
+        width: 60px;
+        height: 50px;
+        right: 20%;
+        bottom: 2.5%;
         background-size: 100% 100%;
         z-index: 5;
 
-        .chimney {
-          background: #fff;
+        .code-smoke-1,
+        .code-smoke-2 {
+          background-image: url("../images/code.svg");
           position: absolute;
-          width: 12px;
-          height: 20px;
-          left: 22%;
-          bottom: 78%;
-          z-index: 2;
+          width: 5px;
+          height: 5px;
+          right: 68%;
+          bottom: 80%;
+          background-size: 100% 100%;
+          z-index: 1;
+          opacity: 0;
         }
-
-        .code-smoke {
-            background-image: url("../images/code.svg");
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            right: 68%;
-            bottom: 80%;
-            background-size: 100% 100%;
-            z-index: 1;
-        }
-      }
-
-      .sheeps {
-        background-image: url("../images/sheeps.svg");
-        position: absolute;
-        width: 95px;
-        height: 55px;
-        left: 41%;
-        bottom: 0;
-        background-size: 100% 100%;
-        z-index: 8;
       }
 
       .windmill {
         .windmill-tower {
           background-image: url("../images/windmilltower.svg");
-          position: absolute;
+          position: fixed;
           width: 56.02px;
           height: 212.21px;
-          right: 22%;
-          bottom: 3%;
+          right: 15%;
+          bottom: 1%;
           background-size: 100% 100%;
           z-index: 4;
 
@@ -131,10 +157,18 @@ body.iam {
             background-size: 100% 100%;
             z-index: 4;
             left: -128%;
-            top: -35%;
+            top: -40%;
           }
         }
       }
     }
+  }
+
+  .after-scene {
+    position: relative;
+    height: 1250px;
+    width: 100%;
+    background: #FFF;
+    z-index: 10;
   }
 }
